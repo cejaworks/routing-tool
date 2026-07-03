@@ -59,9 +59,10 @@
   .row{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px;}
   .row:last-child{border-bottom:none;}
   .row .k{color:#6b6356;flex-shrink:0;}
-  .row .v{text-align:right;font-weight:600;}
+  .row .v{text-align:right;font-weight:600;word-break:break-word;min-width:0;}
   .row .v.warn{color:var(--reject);}
   .row .v a{color:inherit;text-decoration:underline;}
+  @media(max-width:480px){.row{flex-direction:column;gap:4px;}.row .v{text-align:left;}}
   .req-note{margin-top:14px;padding:12px 14px;background:#FBF7E9;border:1px solid #E3D6A0;border-radius:3px;font-size:13.5px;line-height:1.5;color:#5a4a12;}
   .req-note strong{color:#3d3208;}
   .check-item{display:flex;align-items:flex-start;gap:9px;font-size:14px;padding:5px 0;cursor:pointer;}
